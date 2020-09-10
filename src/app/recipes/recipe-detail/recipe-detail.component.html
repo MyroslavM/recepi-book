@@ -10,6 +10,7 @@
 <div class="row">
   <div class="col-xs-12">
     <h1>{{ recipe.name }}</h1>
+    <h4>{{recipe.id}}</h4>
   </div>
 </div>
 <div class="row">
@@ -24,8 +25,8 @@
       </button>
       <ul class="dropdown-menu">
         <li><a (click)="addToShoppingList()" style="cursor: pointer">To Shopping List</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
+        <li><a style="cursor: pointer" (click)="onEditRecipe()">Edit Recipe</a></li>
+        <li><a style="cursor: pointer">Delete Recipe</a></li>
       </ul>
     </div>
   </div>
